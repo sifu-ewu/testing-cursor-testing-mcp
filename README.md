@@ -1,53 +1,81 @@
-# Testing Cursor Testing MCP
+# Advanced NestJS Project
 
 ## Overview
-This repository is dedicated to testing and exploring the capabilities of Cursor IDE and MCP (Multi-Cloud Platform) integration. It serves as a sandbox environment for development and testing purposes.
+This is a sophisticated NestJS application that demonstrates modern backend development practices. The project includes authentication, database integration, API documentation, and follows best practices for enterprise-level applications.
 
 ## Features
-- Integration testing environment
-- Cursor IDE compatibility testing
-- MCP functionality exploration
-- Development sandbox
+- 🔐 JWT Authentication & Authorization
+- 📊 TypeORM Integration with PostgreSQL
+- 📚 Swagger API Documentation
+- 🔄 Environment Configuration
+- ✅ Input Validation using class-validator
+- 🧪 Unit and E2E Testing Setup
+- 🛡️ Security Best Practices
+- 🎯 TypeScript Best Practices
 
-## Getting Started
+## Prerequisites
+- Node.js (v16 or higher)
+- PostgreSQL
+- npm or yarn
 
-### Prerequisites
-- Git installed on your local machine
-- Cursor IDE
-- GitHub account
-
-### Installation
-1. Clone the repository:
+## Installation
 ```bash
-git clone https://github.com/sifu-ewu/testing-cursor-testing-mcp.git
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
 ```
 
-2. Navigate to the project directory:
+## Running the Application
 ```bash
-cd testing-cursor-testing-mcp
+# Development mode
+npm run start:dev
+
+# Production mode
+npm run build
+npm run start:prod
+```
+
+## API Documentation
+Once the application is running, you can access the Swagger documentation at:
+```
+http://localhost:3000/api/docs
+```
+
+## Testing
+```bash
+# Unit tests
+npm run test
+
+# E2E tests
+npm run test:e2e
+
+# Test coverage
+npm run test:cov
 ```
 
 ## Project Structure
 ```
-testing-cursor-testing-mcp/
-├── README.md
-└── (other project files will be added here)
+src/
+├── auth/           # Authentication & authorization
+├── common/         # Shared resources
+├── config/         # Configuration files
+├── database/       # Database configuration
+├── modules/        # Feature modules
+├── main.ts         # Application entry point
+└── app.module.ts   # Root module
 ```
 
 ## Contributing
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
 ## License
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 Project Link: [https://github.com/sifu-ewu/testing-cursor-testing-mcp](https://github.com/sifu-ewu/testing-cursor-testing-mcp)
-
-## Acknowledgments
-- Cursor IDE team
-- GitHub
-- All contributors to this project
